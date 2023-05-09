@@ -52,20 +52,20 @@
 				document.getElementById('name').innerHTML += data.name;
 				document.getElementById('bio').innerHTML += data.bio;
 
-				const links = new Map();
+				const links = {
+					"💻 GitHub": "https://github.com/",
+					"👔 LinkedIn": "https://www.linkedin.com/",
+					"🐦 Twitter": "https://twitter.com/",
+					"📷 Instagram": "https://www.instagram.com/",
+					"🍔 Comidas do Luca": "https://www.instagram.com/comidasdoluca/",
+					"💙 Rede Sky": "https://redesky.com/"
+				};
 
-				links.set("💻 GitHub", data.html_url);
-				links.set("👔 LinkedIn", "https://www.linkedin.com/in/luca-azalim-04153999/")
-				links.set("🐦 Twitter", "https://twitter.com/" + data.twitter_username);
-				links.set("📷 Instagram", "https://instagram.com/lucaazalim");
-				links.set("🍔 Comidas do Luca", "https://instagram.com/comidasdoluca");
-				links.set("💙 Rede Sky", "https://redesky.com");
-
-				links.forEach((url, label) => {
+				for (let [label, url] of Object.entries(links)) {
 					document.getElementById('links').innerHTML += `
 						<a href="${url}" class="btn btn-secondary" target="_blank">${label}</a>
 					`
-				});
+				}
 
 			})
 			.catch(error => console.log('Error fetching data:', error));
