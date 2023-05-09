@@ -20,12 +20,12 @@
 		}
 
 		.container {
-			max-width: 800px;
+			max-width: 500px;
 		}
 
 		#avatar {
 			width: 200px;
-			border-radius: 100%;
+			border-radius: 50%;
 		}
 	</style>
 
@@ -36,7 +36,7 @@
 	<div class="container mt-5">
 		<div class="d-flex flex-column justify-content-center align-items-center">
 			<img id="avatar" class="mb-3">
-			<h1 id="at">@</h1>
+			<h1 id="name"></h1>
 			<p id="bio" class="text-center"></p>
 		</div>
 		<div id="links" class="d-grid gap-2"></div>
@@ -49,7 +49,7 @@
 			.then(data => {
 
 				document.getElementById('avatar').src = data.avatar_url;
-				document.getElementById('at').innerHTML += data.login;
+				document.getElementById('name').innerHTML += data.name;
 				document.getElementById('bio').innerHTML += data.bio;
 
 				const links = new Map();
