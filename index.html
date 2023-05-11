@@ -89,13 +89,13 @@
 			.then(data => {
 
 				document.getElementById('avatar').src = data.avatar_url;
-				document.getElementById('name').innerHTML += data.name;
-				document.getElementById('bio').innerHTML += data.bio;
+				document.getElementById('name').innerHTML = data.name;
+				document.getElementById('bio').innerHTML = data.bio;
 
 				const links = {
-					"💻 GitHub": "https://github.com/" + data.login,
+					"💻 GitHub": data.html_url,
 					"👔 LinkedIn": "https://linkedin.com/lucaazalim",
-					"🐦 Twitter": "https://twitter.com/lucaazalim",
+					"🐦 Twitter": "https://twitter.com/" + data.twitter_username,
 					"📷 Instagram": "https://instagram.com/lucaazalim",
 					"🍔 Comidas do Luca": "https://instagram.com/comidasdoluca/",
 					"💙 Rede Sky": "https://redesky.com/"
