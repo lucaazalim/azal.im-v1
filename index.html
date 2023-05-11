@@ -52,7 +52,7 @@
 			gap: 1rem;
 		}
 
-		.link {
+		#links a {
 			color: white;
 			text-decoration: none;
 			background-color: #363636;
@@ -63,7 +63,7 @@
 			text-align: center;
 		}
 
-		.link:hover {
+		#links a:hover {
 			filter: brightness(120%);
 		}
 
@@ -103,7 +103,7 @@
 
 				for (let [label, url] of Object.entries(links)) {
 					document.getElementById('links').innerHTML += `
-						<a href="${url}" class="link" target="_blank">${label}</a>
+						<a href="${url}" target="_blank">${label}</a>
 					`
 				}
 
