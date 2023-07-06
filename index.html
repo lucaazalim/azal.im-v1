@@ -2,72 +2,16 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
+
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Luca Azalim</title>
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
 
-	<style>
-		body,
-		html {
-			font-family: 'Roboto', sans-serif;
-			background-color: #181818;
-			color: #e7e7e7;
-
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-
-		main {
-			max-width: 500px;
-			margin: 10px;
-		}
-
-		header {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-		}
-
-		#avatar {
-			width: 200px;
-			border-radius: 50%;
-			margin-bottom: 1rem;
-		}
-
-		#name {
-			margin: 0;
-		}
-
-		#bio {
-			text-align: center;
-		}
-
-		#links {
-			display: grid;
-			gap: 1rem;
-		}
-
-		#links a {
-			color: white;
-			text-decoration: none;
-			background-color: #363636;
-			border-radius: 5px;
-			padding: 15px;
-			transition: filter 0.3s;
-
-			text-align: center;
-		}
-
-		#links a:hover {
-			filter: brightness(120%);
-		}
-
-	</style>
+	<script src="https://kit.fontawesome.com/86ad24bcb9.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -82,37 +26,7 @@
 		<div id="links"></div>
 	</main>
 
-	<script>
-
-		fetch('https://api.github.com/users/lucaazalim')
-			.then(response => response.json())
-			.then(data => {
-
-				document.getElementById('avatar').src = data.avatar_url;
-				document.getElementById('name').innerHTML = data.name;
-				document.getElementById('bio').innerHTML = data.bio;
-
-				const links = {
-					"💻 GitHub": data.html_url,
-					"👔 LinkedIn": "https://www.linkedin.com/in/luca-azalim-04153999/",
-					"🐦 Twitter": "https://twitter.com/" + data.twitter_username,
-					"📷 Instagram": "https://www.instagram.com/lucaazalim",
-					"🍔 Comidas do Luca": "https://www.instagram.com/comidasdoluca/",
-					"🎬 Filmes, séries e documentários assistidos": "https://docs.google.com/spreadsheets/d/15niBHmP8eMCLUAH7XefBBk2QyjQj0X57hQSq8tQXaQ0/edit#gid=991418092",
-					"💙 Rede Sky": "https://redesky.com/"
-				};
-
-				for (let [label, url] of Object.entries(links)) {
-					document.getElementById('links').innerHTML += `
-						<a href="${url}" target="_blank">${label}</a>
-					`
-				}
-
-			})
-			.catch(error => console.log('Error fetching data:', error));
-
-
-	</script>
+	<script src="script.js"></script>
 
 </body>
 
