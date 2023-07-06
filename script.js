@@ -8,50 +8,51 @@ fetch('https://api.github.com/users/lucaazalim')
 
         const links = [
             {
-                "name": "GitHub",
-                "icon": "fa-brands fa-github",
-                "color": "#333",
-                "url": data.html_url
+                name: "GitHub",
+                icon: "fa-brands fa-github",
+                color: "#333",
+                url: data.html_url
             },
             {
-                "name": "LinkedIn",
-                "icon": "fa-brands fa-linkedin",
-                "color": "#0077B5",
-                "url": "https://www.linkedin.com/in/luca-azalim-04153999/"
+                name: "LinkedIn",
+                icon: "fa-brands fa-linkedin",
+                color: "#0077B5",
+                url: "https://www.linkedin.com/in/luca-azalim-04153999/"
             },
             {
-                "name": "Twitter",
-                "icon": "fa-brands fa-twitter",
-                "color": "#1DA1F2",
-                "url": "https://twitter.com/" + data.twitter_username
+                name: "Twitter",
+                icon: "fa-brands fa-twitter",
+                color: "#1DA1F2",
+                url: "https://twitter.com/" + data.twitter_username
             },
             {
-                "name": "Threads",
-                "icon": "fa-solid fa-at",
-                "color": "#000",
-                "url": "https://www.threads.net/@lucaazalim"
+                name: "Threads",
+                icon: "fa-solid fa-at",
+                color: "#000",
+                url: "https://www.threads.net/@lucaazalim"
             },
             {
-                "name": "Instagram",
-                "icon": "fa-brands fa-instagram",
-                "color": "#E1306C",
-                "url": "https://www.instagram.com/lucaazalim"
+                name: "Instagram",
+                icon: "fa-brands fa-instagram",
+                color: "#E1306C",
+                url: "https://www.instagram.com/lucaazalim"
             },
             {
-                "name": "Comidas do Luca",
-                "icon": "fa-solid fa-burger",
-                "color": "#E1306C",
-                "url": "https://www.instagram.com/comidasdoluca/"
+                name: "Comidas do Luca",
+                icon: "fa-solid fa-burger",
+                color: "#E1306C",
+                url: "https://www.instagram.com/comidasdoluca/"
             },
             {
-                "name": "Filmes, séries e documentários assistidos",
-                "icon": "fas fa-film",
-                "url": "https://docs.google.com/spreadsheets/d/15niBHmP8eMCLUAH7XefBBk2QyjQj0X57hQSq8tQXaQ0/edit#gid=991418092"
+                name: "Filmes e séries assistidos",
+                icon: "fas fa-film",
+                color: "#1da666",
+                url: "https://docs.google.com/spreadsheets/d/15niBHmP8eMCLUAH7XefBBk2QyjQj0X57hQSq8tQXaQ0/edit#gid=991418092"
             },
             {
-                "name": "Rede Sky",
-                "icon": "fa-solid fa-heart",
-                "url": "https://redesky.com/"
+                name: "Rede Sky",
+                icon: "fa-solid fa-heart",
+                url: "https://redesky.com/"
             }
         ];
 
