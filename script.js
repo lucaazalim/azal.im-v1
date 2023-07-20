@@ -28,7 +28,7 @@ fetch('https://api.github.com/users/lucaazalim')
             {
                 name: "Threads",
                 icon: "fa-solid fa-at",
-                color: "#000",
+                color: "#333",
                 url: "https://www.threads.net/@lucaazalim"
             },
             {
