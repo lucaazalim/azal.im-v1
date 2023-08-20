@@ -10,7 +10,6 @@ fetch('https://api.github.com/users/lucaazalim')
             {
                 name: "GitHub",
                 icon: "fa-brands fa-github",
-                color: "#333",
                 url: data.html_url
             },
             {
@@ -20,27 +19,25 @@ fetch('https://api.github.com/users/lucaazalim')
                 url: "https://www.linkedin.com/in/luca-azalim-04153999/"
             },
             {
-                name: "Twitter",
-                icon: "fa-brands fa-twitter",
-                color: "#1DA1F2",
+                name: "X/Twitter",
+                icon: "fa-brands fa-x-twitter",
                 url: "https://twitter.com/" + data.twitter_username
             },
             {
                 name: "Threads",
-                icon: "fa-solid fa-at",
-                color: "#333",
+                icon: "fa-brands fa-threads",
                 url: "https://www.threads.net/@lucaazalim"
             },
             {
                 name: "Instagram",
                 icon: "fa-brands fa-instagram",
-                color: "#E1306C",
+                color: "#FF0069",
                 url: "https://www.instagram.com/lucaazalim"
             },
             {
                 name: "Comidas do Luca",
                 icon: "fa-solid fa-burger",
-                color: "#E1306C",
+                color: "#FF0069",
                 url: "https://www.instagram.com/comidasdoluca/"
             },
             {
